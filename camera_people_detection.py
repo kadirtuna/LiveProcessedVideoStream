@@ -13,11 +13,11 @@ class VideoPeopleDetection():
     def __init__(self):
         # Load YOLOv5 model
         #self.model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
-        modelName = "best_person_29.05.2023-yolov5s-1-without_data_augmentation.pt"
+        modelName = "best_person_29.05.2023-yolov5s-2.pt"
         self.model = self.load_model(modelName)
         self.classes = self.model.names
-        # self.video_name = 'CrowdedAreaFootageVideo.mp4'
-        self.video_name = 'For_Validation6.mp4'
+        self.video_name = 'CrowdedAreaFootageVideo.mp4'
+        # self.video_name = 'For_Validation6.mp4'
 
         # Read the video file
         self.cap = cv2.VideoCapture(self.video_name)
