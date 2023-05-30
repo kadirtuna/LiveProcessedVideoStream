@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> People Counter App</title>
+    <title>People Counter App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="title">
-        <h1> People Counting using Yolov5s Model</h1>
+    <div style="display: grid; justify-content: center; text-align: center;">
+        <h1 style="color: red;">Lisans Tezi</h1>
+        <img style="width: 100%; height: 100%;" id="bg" src="{{url_for('video_feed')}}">
     </div>
-    <div id="processed_video">
-        <img id="bg" src="{{url_for('video_feed')}}">
-    </div>
+
 </body>
 </html>
